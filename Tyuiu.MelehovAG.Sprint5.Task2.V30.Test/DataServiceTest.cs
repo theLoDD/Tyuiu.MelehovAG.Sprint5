@@ -11,7 +11,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task2.V30.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task1.V6\bin\Debug\OutPutFileTask1.txt";
+            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task2.V30\bin\Debug\OutPutFileTask2.csv";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
