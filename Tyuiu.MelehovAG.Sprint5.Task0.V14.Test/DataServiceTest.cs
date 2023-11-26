@@ -9,7 +9,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task0.V14.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CheckedExistsFile()
         {
             // string path = $@"{Directory.GetCurrentDirectory()}]OutPutFileTask0.txt";
 
