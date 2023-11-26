@@ -24,15 +24,71 @@ namespace Tyuiu.MelehovAG.Sprint5.Task2.V30
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int a = -5;
+            int a;
+            Console.Write("* Введите 1 число для матрицы 3 на 3: ");
+            a = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("a = " + a);
+            int b;
+            Console.Write("* Введите 2 число для матрицы 3 на 3: ");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            int c;
+            Console.Write("* Введите 3 число для матрицы 3 на 3: ");
+            c = Convert.ToInt32(Console.ReadLine());
+
+            int d;
+            Console.Write("* Введите 4 число для матрицы 3 на 3: ");
+            d = Convert.ToInt32(Console.ReadLine());
+
+            int e;
+            Console.Write("* Введите 5 число для матрицы 3 на 3: ");
+            e = Convert.ToInt32(Console.ReadLine());
+
+            int f;
+            Console.Write("* Введите 6 число для матрицы 3 на 3: ");
+            f = Convert.ToInt32(Console.ReadLine());
+
+            int g;
+            Console.Write("* Введите 7 число для матрицы 3 на 3: ");
+            g = Convert.ToInt32(Console.ReadLine());
+
+            int h;
+            Console.Write("* Введите 8 число для матрицы 3 на 3: ");
+            h = Convert.ToInt32(Console.ReadLine());
+
+            int k;
+            Console.Write("* Введите 9 число для матрицы 3 на 3: ");
+            k = Convert.ToInt32(Console.ReadLine());
+
+            /*
+            int[,] mtrx = new int[3, 3]  { { 3, -1, -3},
+                                           { -2, -5, 0},
+                                           { -8, -7, 2} };*/
+            int[,] mtrx = new int[3, 3]  { { a, b, c},
+                                           { d, e, f},
+                                           { g, h, k} }; 
+            int rows = mtrx.GetUpperBound(0) + 1; // количество строк
+            int columns = mtrx.Length / rows; // количество столбцов
+                                              // или так  int columns = numbers.GetUpperBound(1) + 1;
+
+
+
+            Console.WriteLine("Массив:");
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write($"{mtrx[i, j]} \t");
+                }
+                Console.WriteLine();
+            }
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(a);
+            string res = ds.SaveToFileTextData(mtrx);
 
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");
