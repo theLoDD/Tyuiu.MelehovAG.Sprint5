@@ -24,7 +24,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task4.V23
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            string path = $@"{Directory.GetCurrentDirectory()}\InPutDataFileTask4V23.txt";
+            string path = $@"C:\DataSprint5\InPutDataFileTask4V23.txt";
 
             Console.WriteLine("Данные находятся в файле: " + path);
 
