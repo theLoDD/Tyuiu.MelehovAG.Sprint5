@@ -12,7 +12,14 @@ namespace Tyuiu.MelehovAG.Sprint5.Task0.V14.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            throw new NotImplementedException();
+
+            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
+            double y = (double)x;
+            y = (4 * Math.Pow(x, 3)) / (Math.Pow(x, 3) - 1);
+            y = Math.Round(y, 3);
+            string answer = y.ToString();
+            File.WriteAllText(path, answer);
+            return answer;
         }
     }
 }

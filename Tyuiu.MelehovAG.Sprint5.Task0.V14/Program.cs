@@ -24,9 +24,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task0.V14
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int a = -5;
-
-            Console.WriteLine("a = " + a);
+            int a = 3;
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
@@ -34,8 +32,8 @@ namespace Tyuiu.MelehovAG.Sprint5.Task0.V14
 
             string res = ds.SaveToFileTextData(a);
 
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
+            Console.WriteLine("Ответ: " + res);
+            Console.WriteLine("Файл создан!\n\n");
             Console.ReadKey();
 
         }
