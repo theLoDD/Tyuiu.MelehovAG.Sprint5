@@ -11,7 +11,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task6.V0.Lib
     public class DataService : ISprint5Task6V0
     {
         public int LoadFromDataFile(string path)
-        {
+        { 
             int count = 0;
             using (StreamReader reader = new StreamReader(path))
             {

@@ -16,7 +16,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task6.V30.Test
             string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task6.V30\bin\Debug\InPutDataFileTask6V30.txt";
 
             var res = ds.LoadFromDataFile(path);
-            int wait = 0;
+            int wait = 2;
             Assert.AreEqual(wait, res);
         }
         public void CheckExistsFile()

@@ -11,7 +11,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task6.V0.Test
     {
         [TestMethod]
         public void ValidCalc()
-        {
+        { 
             DataService ds = new DataService();
             string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task6.V30\bin\Debug\InPutDataFileTask6V30.txt";
 

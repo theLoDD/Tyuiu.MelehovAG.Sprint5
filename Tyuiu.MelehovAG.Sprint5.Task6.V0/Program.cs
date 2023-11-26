@@ -22,7 +22,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task6.V0
             Console.WriteLine("* Выполнил: Мелехов Алексей Григорьевич | ПКТб-23-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("***************************************************************************"); 
 
             string path = $@"{Directory.GetCurrentDirectory()}\InPutDataFileTask6V30.txt";
             Console.WriteLine("Данные находятся в файле: " + path);

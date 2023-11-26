@@ -19,16 +19,21 @@ namespace Tyuiu.MelehovAG.Sprint5.Task6.V30.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    for (int i = 0; i < line.Length; i++)
-                    {
-                        if (line[i] == '*')
+                        string[] words = line.Split(' '); // Разделение строки на слова
+
+                        foreach (string word in words)
                         {
+                            if (word.Length == 8)
+                            {
                             count++;
+                            }
                         }
-                    }
+                    
                 }
             }
             return count;
+
+            
         }
     }
 }
