@@ -24,7 +24,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task5.V4
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            string path = @"C:\DataSprint5\InPutDataFileTask5V4.txt";
+            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task5.V4\bin\Debug\InPutDataFileTask5V4.txt";
 
             Console.WriteLine("Данные находятся в файле: " + path);
 
@@ -32,7 +32,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task5.V4
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double res = ds.LoadFromDataFile(path);
+            double res = Convert.ToDouble(ds.LoadFromDataFile(path));
 
             Console.WriteLine("Произведение элементов файла = " + res);
             Console.ReadKey();

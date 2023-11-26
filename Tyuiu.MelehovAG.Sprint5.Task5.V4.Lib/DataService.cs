@@ -16,14 +16,25 @@ namespace Tyuiu.MelehovAG.Sprint5.Task5.V4.Lib
             double res = 0;
             using (StreamReader reader = new StreamReader(path))
             {
+                int i = 0;
                 string line;
-                int i = 1;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    res = res * Convert.ToDouble(line);
+                    double line2 = Convert.ToDouble(line);
+                    i++;
+                    if (i == 1)
+                    {
+                        res = line2; 
+                    }
+                    else
+                    {
+                        res = line2 * res; 
+                    }
+                    
                 }
+                return res;
+                
             }
-            return res;
         }
     }
 }
