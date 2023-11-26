@@ -8,7 +8,11 @@ using System.IO;
 
 namespace Tyuiu.MelehovAG.Sprint5.Task1.V0.Lib
 {
-    public class DataService
+    public class DataService : ISprint5Task1V0
     {
+        public string SaveToFileTextData(int startValue, int stopValue)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

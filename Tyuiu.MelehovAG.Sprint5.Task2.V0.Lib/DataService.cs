@@ -8,7 +8,11 @@ using System.IO;
 
 namespace Tyuiu.MelehovAG.Sprint5.Task2.V0.Lib
 {
-    public class DataService
+    public class DataService : ISprint5Task2V0
     {
+        public string SaveToFileTextData(int[,] matrix)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -9,8 +9,15 @@ namespace Tyuiu.MelehovAG.Sprint5.Task3.V0.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CheckExistsFile()
         {
+
+            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task3.V0\bin\Debug\OutPutFileTask3.bin";
+
+            FileInfo fileInfo = new FileInfo(path);
+            bool fileExists = fileInfo.Exists;
+            bool wait = true;
+            Assert.AreEqual(wait, fileExists);
         }
     }
 }
