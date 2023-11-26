@@ -34,16 +34,17 @@ namespace Tyuiu.MelehovAG.Sprint5.Task1.V6.Lib
                 }
                 else
                 {
-                    File.AppendAllText(path, "0");
-                    return path;
+                    File.AppendAllText(path, "0\n");
                 }
 
                 if (x != stopValue)
                 {
+                    stringY = Convert.ToString(y);
                     File.AppendAllText(path, stringY + Environment.NewLine);
                 }
                 else
                 {
+                    stringY = Convert.ToString(y);
                     File.AppendAllText(path, stringY);
                 }
 
