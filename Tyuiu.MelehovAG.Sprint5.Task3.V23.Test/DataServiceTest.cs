@@ -11,7 +11,8 @@ namespace Tyuiu.MelehovAG.Sprint5.Task3.V23.Test
         [TestMethod]
         public void CheckExistsFile()
         {
-            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task2.V30\bin\Debug\OutPutFileTask2.csv";
+
+            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task3.V23\bin\Debug\OutPutFileTask3.bin";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;

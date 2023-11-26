@@ -18,7 +18,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task3.V23
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Потоковый метод записи данных в бинарный файл                     *");
             Console.WriteLine("* Задание #3                                                              *");
-            Console.WriteLine("* Вариант #23                                                             *");
+            Console.WriteLine("* Вариант #23                                                              *");
             Console.WriteLine("* Выполнил: Мелехов Алексей Григорьевич | ПКТб-23-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
@@ -36,7 +36,21 @@ namespace Tyuiu.MelehovAG.Sprint5.Task3.V23
 
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");
+            
+            using (FileStream fileStream = new FileStream(res, FileMode.Open))
+            {
+                using (BinaryReader binaryReader = new BinaryReader(fileStream))
+                {
+                    // Считываем данные из бинарного файла
+                    int intValue = binaryReader.ReadInt32();
+                    double doubleValue = binaryReader.ReadDouble();
+
+                    Console.WriteLine("Прочитанные данные из бинарного файла:");
+                    Console.WriteLine("double: " + doubleValue);
+                }
+            }
             Console.ReadKey();
+
 
         }
     }
