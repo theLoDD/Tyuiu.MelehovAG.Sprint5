@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using Tyuiu.MelehovAG.Sprint5.Task6.V0.Lib;
 
 namespace Tyuiu.MelehovAG.Sprint5.Task6.V0
@@ -23,18 +24,16 @@ namespace Tyuiu.MelehovAG.Sprint5.Task6.V0
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int a = -5;
-
-            Console.WriteLine("a = " + a);
+            string path = $@"{Directory.GetCurrentDirectory()}\InPutDataFileTask6V0.bin";
+            Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(a);
+            double res = ds.LoadFromDataFile(path);
 
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
+            Console.WriteLine(res);
             Console.ReadKey();
 
         }

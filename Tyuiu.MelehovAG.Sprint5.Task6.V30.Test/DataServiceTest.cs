@@ -9,9 +9,19 @@ namespace Tyuiu.MelehovAG.Sprint5.Task6.V30.Test
     public class DataServiceTest
     {
         [TestMethod]
+
+        public void ValidCalc()
+        {
+            DataService ds = new DataService();
+            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task6.V30\bin\Debug\InPutDataFileTask6V30.txt";
+
+            var res = DataService.LoadFromDataFile(path);
+            int wait = 10;
+            Assert.AreEqual(wait, res);
+        }
         public void CheckExistsFile()
         {
-            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task6.V0\bin\Debug\InPutDataFileTask6V0.txt";
+            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task6.V30\bin\Debug\InPutDataFileTask6V30.txt";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
