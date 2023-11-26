@@ -34,7 +34,9 @@ namespace Tyuiu.MelehovAG.Sprint5.Task0.V0
 
             string res = ds.SaveToFileTextData(a);
 
+            string path = File.ReadAllText(res);
             Console.WriteLine("Файл: " + res);
+            Console.WriteLine("Содержимое: \n" + path + "\n");
             Console.WriteLine("Создан!");
             Console.ReadKey();
             

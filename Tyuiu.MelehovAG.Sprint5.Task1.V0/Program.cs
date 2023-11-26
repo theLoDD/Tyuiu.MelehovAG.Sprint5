@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Tyuiu.MelehovAG.Sprint5.Task1.V0.Lib;
+using System.IO;
 
 namespace Tyuiu.MelehovAG.Sprint5.Task1.V0
 {
@@ -23,15 +24,15 @@ namespace Tyuiu.MelehovAG.Sprint5.Task1.V0
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int a = -5;
+            int startValue = -15;
+            int stopValue = 15;
 
-            Console.WriteLine("a = " + a);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(a);
+            string res = ds.SaveToFileTextData(startValue, stopValue);
 
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");

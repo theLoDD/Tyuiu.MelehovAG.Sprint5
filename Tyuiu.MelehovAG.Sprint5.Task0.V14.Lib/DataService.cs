@@ -19,7 +19,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task0.V14.Lib
             y = Math.Round(y, 3);
             string answer = y.ToString();
             File.WriteAllText(path, answer);
-            return answer;
+            return path;
         }
     }
 }
