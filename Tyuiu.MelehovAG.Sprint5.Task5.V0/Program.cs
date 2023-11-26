@@ -23,18 +23,17 @@ namespace Tyuiu.MelehovAG.Sprint5.Task5.V0
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int a = -5;
+            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task5.V0\bin\Debug\InPutDataFileTask5V0.txt";
 
-            Console.WriteLine("a = " + a);
+            Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(a);
+            double res = ds.LoadFromDataFile(path);
 
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
+            Console.WriteLine("Сумма элементов файла = " + res);
             Console.ReadKey();
 
         }

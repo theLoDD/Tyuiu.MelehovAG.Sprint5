@@ -12,7 +12,18 @@ namespace Tyuiu.MelehovAG.Sprint5.Task5.V4.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            throw new NotImplementedException();
+
+            double res = 0;
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string line;
+                int i = 1;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    res = res * Convert.ToDouble(line);
+                }
+            }
+            return res;
         }
     }
 }
