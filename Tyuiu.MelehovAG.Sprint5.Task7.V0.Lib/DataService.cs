@@ -12,7 +12,38 @@ namespace Tyuiu.MelehovAG.Sprint5.Task7.V0.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            throw new NotImplementedException();
+            string pathSaveFile = $@"C:\DataSprint5\OutPutDataFileTask7V1.txt";
+
+            FileInfo fileInfo = new FileInfo(pathSaveFile);
+            bool fileExists = fileInfo.Exists;
+
+            if (fileExists)
+            {
+                File.Delete(pathSaveFile);
+            }
+
+            string strLine = "";
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    for (int i = 0; i < line.Length; i++)
+                    {
+                        if((line[i] != '*') && (line[i] != '+') && (line[i] != '-') && (line[i] != '/'))
+                        {
+                            strLine = strLine + line[i];
+                        }
+
+                    }
+                    File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
+                    strLine = "";
+                }
+            }
+
+            return pathSaveFile;
+
         }
     }
 }

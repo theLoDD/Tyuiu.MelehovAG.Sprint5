@@ -24,18 +24,18 @@ namespace Tyuiu.MelehovAG.Sprint5.Task7.V1
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int a = -5;
+            string path = $@"C:\DataSprint5\InPutDataFileTask7V1.txt";
+            string pathSaveFile = $@"C:\DataSprint5\OutPutDataFileTask7V1.txt";
 
-            Console.WriteLine("a = " + a);
+            Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(a);
+            pathSaveFile = ds.LoadDataAndSave(path);
 
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
+            Console.WriteLine(pathSaveFile);
             Console.ReadKey();
 
         }
