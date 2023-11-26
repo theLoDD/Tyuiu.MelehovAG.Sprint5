@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.IO;
 using Tyuiu.MelehovAG.Sprint5.Task4.V0.Lib;
 
 namespace Tyuiu.MelehovAG.Sprint5.Task4.V0.Test
@@ -10,6 +11,13 @@ namespace Tyuiu.MelehovAG.Sprint5.Task4.V0.Test
         [TestMethod]
         public void CheckExistsFile()
         {
+
+            string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task4.V0\bin\Debug\InPutDataFileTask4V0.txt";
+
+            FileInfo fileInfo = new FileInfo(path);
+            bool fileExists = fileInfo.Exists;
+            bool wait = true;
+            Assert.AreEqual(wait, fileExists);
         }
     }
 }

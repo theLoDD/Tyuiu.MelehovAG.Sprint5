@@ -12,7 +12,9 @@ namespace Tyuiu.MelehovAG.Sprint5.Task4.V23.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            throw new NotImplementedException();
+            string strX = File.ReadAllText(path);
+            double res = Math.Round(Math.Pow(Convert.ToDouble(strX), 2), 3);
+            return res;
         }
     }
 }
