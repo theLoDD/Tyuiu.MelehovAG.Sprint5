@@ -24,12 +24,9 @@ namespace Tyuiu.MelehovAG.Sprint5.Task2.V0
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int[,] mtrx = new int[3, 3]
-            {
-                { 0, 1, 0},
-                { 10, 10, 1},
-                { 0, 1, 1}
-            };
+            int[,] mtrx = new int[3, 3]  { { 0, 1, 0},
+                                           { 10, 10, 1},
+                                           { 0, 1, 1} };
             int rows = mtrx.GetUpperBound(0) + 1; // количество строк
             int columns = mtrx.Length / rows; // количество столбцов
                                               // или так  int columns = numbers.GetUpperBound(1) + 1;
