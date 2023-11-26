@@ -25,14 +25,18 @@ namespace Tyuiu.MelehovAG.Sprint5.Task3.V0
             Console.WriteLine("***************************************************************************");
 
             int a = -5;
+            int b = 7;
+            int c = 11;
 
             Console.WriteLine("a = " + a);
+            Console.WriteLine("b = " + b);
+            Console.WriteLine("c = " + c);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(a);
+            string res = ds.SaveToFileBinaryData(a, b, c);
 
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");

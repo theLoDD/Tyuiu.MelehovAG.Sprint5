@@ -9,7 +9,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task5.V4.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CheckExistsFile()
         {
         }
     }
