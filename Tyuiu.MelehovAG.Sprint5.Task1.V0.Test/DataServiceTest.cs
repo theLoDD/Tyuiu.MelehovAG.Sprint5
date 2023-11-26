@@ -9,7 +9,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task1.V0.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CheckedExistsFile()
         {
             string path = @"C:\Users\Иридий\source\repos\Tyuiu.MelehovAG.Sprint5\Tyuiu.MelehovAG.Sprint5.Task1.V0\bin\Debug\OutPutFileTask1.txt";
 
