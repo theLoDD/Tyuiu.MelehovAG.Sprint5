@@ -32,10 +32,9 @@ namespace Tyuiu.MelehovAG.Sprint5.Task0.V14
 
             string res = ds.SaveToFileTextData(a);
 
-            string path_file = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
-            Console.WriteLine("Ответ: " + res);
-            Console.WriteLine("Путь к файлу: " + path_file);
-            Console.WriteLine("Файл создан!\n\n");
+            string path_file = File.ReadAllText(res);
+            Console.WriteLine("Файл: " + res);
+            Console.WriteLine("Содержимое: \n" + path_file + "\n");
             Console.ReadKey();
 
         }
