@@ -18,24 +18,23 @@ namespace Tyuiu.MelehovAG.Sprint5.Task4.V23
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Чтение данных из текстового файла                                 *");
             Console.WriteLine("* Задание #4                                                              *");
-            Console.WriteLine("* Вариант #23                                                             *");
+            Console.WriteLine("* Вариант #0                                                              *");
             Console.WriteLine("* Выполнил: Мелехов Алексей Григорьевич | ПКТб-23-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int a = -5;
+            string path = $@"{Directory.GetCurrentDirectory()}\InPutDataFileTask4V23.txt";
 
-            Console.WriteLine("a = " + a);
+            Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(a);
+            double res = ds.LoadFromDataFile(path);
 
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
+            Console.WriteLine(res);
             Console.ReadKey();
 
         }
