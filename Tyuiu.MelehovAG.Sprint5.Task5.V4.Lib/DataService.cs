@@ -24,15 +24,15 @@ namespace Tyuiu.MelehovAG.Sprint5.Task5.V4.Lib
                     double line2 = Convert.ToDouble(line);
                     if (i == 1)
                     {
-                        Console.WriteLine("Прогон " + i + ". Число: = " + line2);
+                        //Console.WriteLine("Прогон " + i + ". Число: = " + line2);
                         res = Math.Round(line2, 3);
-                        Console.WriteLine("Прогон " + i + ". Результат: = " + res + "\n");
+                        //Console.WriteLine("Прогон " + i + ". Результат: = " + res + "\n");
                     } else
                     {
-                        Console.WriteLine("Прогон " + i + ". Число: = " + line2);
-                        Console.WriteLine("Прогон " + i + ". Прошлый результат: = " + res);
+                        //Console.WriteLine("Прогон " + i + ". Число: = " + line2);
+                        //Console.WriteLine("Прогон " + i + ". Прошлый результат: = " + res);
                         res = Math.Round(line2, 3) * res;
-                        Console.WriteLine("Прогон " + i + ". Текущий результат: = " + res + "\n");
+                        //Console.WriteLine("Прогон " + i + ". Текущий результат: = " + res + "\n");
                     }
 
                     i++;
