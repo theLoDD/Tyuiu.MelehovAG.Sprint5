@@ -27,7 +27,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task1.V6.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Cos(x) + (4 * x / 2) - Math.Sin(x) * 3 * x;
+                y = Math.Round(Math.Cos(x) + (4 * x / 2) - Math.Sin(x) * 3 * x, 2);
                 if (x != 0 && y / x == 0)
                 {
                     stringY = Convert.ToString(y);
