@@ -15,7 +15,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task3.V23.Lib
             string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask3.bin";
 
             double z;
-            z = 1 + Math.Pow(x, 3) / Math.Pow(x, 2);
+            z = (1 + Math.Pow(x, 3)) / Math.Pow(x, 2);
             z = Math.Round(z, 3);
 
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
