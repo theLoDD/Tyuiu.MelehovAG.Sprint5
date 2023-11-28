@@ -16,21 +16,27 @@ namespace Tyuiu.MelehovAG.Sprint5.Task5.V4.Lib
             double res = 0;
             using (StreamReader reader = new StreamReader(path))
             {
-                int i = 0;
+                
+                int i = 1;
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
                     double line2 = Convert.ToDouble(line);
-                    i++;
                     if (i == 1)
                     {
-                        res = line2; 
-                    }
-                    else
+                        Console.WriteLine("Прогон " + i + ". Число: = " + line2);
+                        res = Math.Round(line2, 3);
+                        Console.WriteLine("Прогон " + i + ". Результат: = " + res + "\n");
+                    } else
                     {
-                        res = line2 * res; 
+                        Console.WriteLine("Прогон " + i + ". Число: = " + line2);
+                        Console.WriteLine("Прогон " + i + ". Прошлый результат: = " + res);
+                        res = Math.Round(line2, 3) * res;
+                        Console.WriteLine("Прогон " + i + ". Текущий результат: = " + res + "\n");
                     }
-                    
+
+                    i++;
+
                 }
                 return res;
                 
