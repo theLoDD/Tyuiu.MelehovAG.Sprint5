@@ -16,7 +16,7 @@ namespace Tyuiu.MelehovAG.Sprint5.Task6.V30.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                while ((line = reader.ReadLine()) != null)
+                while ((line = reader.ReadLine()) != null) 
                 {
                     string[] words = line.Split(' '); // Разделение строки на слова
 
