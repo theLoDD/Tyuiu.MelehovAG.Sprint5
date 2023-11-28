@@ -33,9 +33,9 @@ namespace Tyuiu.MelehovAG.Sprint5.Task2.V30.Lib
                 {
                     if (matrix[i, j] > 0)
                     {
-                        matrix[i, j] = 0;
-                    } else {
                         matrix[i, j] = 1;
+                    } else {
+                        matrix[i, j] = 0;
                     }
                 }
             }
